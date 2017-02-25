@@ -209,6 +209,7 @@
 --resource:"C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\obj\Debug\netcoreapp1.0\CharEmServicesdotnet-compile.deps.json",CharEmServices.deps.json
 C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Program.cs
 C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Startup.cs
+C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Controllers\AccountController.cs
 C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Controllers\HomeController.cs
 C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Models\Address.cs
 C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Models\LinkServiceProvideLocation.cs
@@ -218,12 +219,15 @@ C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Mo
 C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Models\LinkServiceRecipService.cs
 C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Models\LinkServiceRecipUser.cs
 C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Models\Location.cs
+C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Models\LoginViewModel.cs
 C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Models\MainContext.cs
 C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Models\OrganizationType.cs
+C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Models\RegisterViewModel.cs
 C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Models\Service.cs
 C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Models\ServiceProvider.cs
 C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Models\ServiceRecipient.cs
 C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Models\ServiceType.cs
 C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Models\Team.cs
 C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Models\User.cs
+C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Models\UserRole.cs
 C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Models\UserType.cs

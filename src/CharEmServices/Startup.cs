@@ -34,9 +34,11 @@ namespace CharEmServices
         {
             // Add framework services.
             services.AddMvc();
-
             services.AddSingleton<IConfigurationBuilder>(builder);
             services.AddDbContext<MainContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddIdentity<User, UserRole>()
+                .AddEntityFrameworkStores<MainContext>()
+                .AddDefaultTokenProviders();
         }
 
 
@@ -57,7 +59,7 @@ namespace CharEmServices
             }
 
             app.UseStaticFiles();
-
+            app.UseIdentity();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

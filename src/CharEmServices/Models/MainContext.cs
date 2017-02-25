@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CharEmServices.Models
 {
-    public class MainContext : DbContext
+    public class MainContext : IdentityDbContext<User, UserRole,string>
     {
         public MainContext(DbContextOptions<MainContext> options) : base(options) { }
 
@@ -18,7 +19,7 @@ namespace CharEmServices.Models
         public DbSet<ServiceRecipient> ServiceRecipient {get;set;}
         public DbSet<ServiceType> ServiceTypes { get; set; }
         public DbSet<Team> Teams { get; set; }
-        public DbSet<User> Users { get; set; }
+        //public DbSet<User> Users { get; set; }
         public DbSet<UserType> UserTypes { get; set; }
 
         public DbSet<LinkServiceProvideLocation> LinkServiceProvideLocation { get; set; }

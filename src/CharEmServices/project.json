@@ -18,6 +18,8 @@
       "version": "1.0.0-preview2-final",
       "type": "build"
     },
+    "Microsoft.AspNetCore.Authentication.Cookies": "1.0.0",
+    "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "1.0.0",   
     "Microsoft.AspNetCore.Mvc.ViewFeatures": "1.0.1",
     "Microsoft.AspNetCore.Hosting": "1.0.0",
     "Microsoft.AspNetCore.Diagnostics": "1.0.0",
