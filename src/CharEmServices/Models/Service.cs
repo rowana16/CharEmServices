@@ -9,8 +9,8 @@ namespace CharEmServices.Models
     {
         public Service()
         {
-            this.ServiceProviders = new HashSet<ServiceProvider>();
-            this.ServiceRecipients = new HashSet<ServiceRecipient>();
+            this.LinkServiceProviders = new HashSet<LinkServiceProvideService>();
+            this.LinkServiceRecipients = new HashSet<LinkServiceRecipService>();
         }
 
         public int Id { get; set; }
@@ -20,7 +20,7 @@ namespace CharEmServices.Models
         public int ServiceTypeId { get; set; }
         public virtual ServiceType ServiceType { get; set; }
                 
-        public virtual ICollection<ServiceProvider> ServiceProviders { get; set; }
-        public virtual ICollection<ServiceRecipient> ServiceRecipients { get; set; }
+        public virtual ICollection<LinkServiceProvideService> LinkServiceProviders { get; set; }
+        public virtual ICollection<LinkServiceRecipService> LinkServiceRecipients { get; set; }
     }
 }

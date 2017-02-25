@@ -7,6 +7,13 @@ namespace CharEmServices.Models
 {
     public class ServiceRecipient
     {
+        public ServiceRecipient()
+        {
+            this.LinkLocations = new HashSet<LinkServiceRecipLocation>();
+            this.LinkServices = new HashSet<LinkServiceRecipService>();
+            this.LinkUsers = new HashSet<LinkServiceRecipUser>();
+        }
+
         public int Id { get; set; }
         public string OrganizationName { get; set; }
 
@@ -20,7 +27,8 @@ namespace CharEmServices.Models
         public virtual User User { get; set; }
         public virtual Team Team { get; set; }
 
-        public virtual ICollection<Location> Locations { get; set; }
-        public virtual ICollection<Service> Services { get; set; }
+        public virtual ICollection<LinkServiceRecipLocation> LinkLocations { get; set; }
+        public virtual ICollection<LinkServiceRecipService> LinkServices { get; set; }
+        public virtual ICollection<LinkServiceRecipUser> LinkUsers { get; set; }
     }
 }

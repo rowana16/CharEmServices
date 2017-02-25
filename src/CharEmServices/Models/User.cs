@@ -10,8 +10,8 @@ namespace CharEmServices.Models
     {
         public User(string userName) : base(userName)
         {
-            this.ServiceRecipients = new HashSet<ServiceRecipient>();
-            this.ServiceProviders = new HashSet<ServiceProvider>();
+            this.LinkServiceRecipients = new HashSet<LinkServiceRecipUser>();
+            this.LinkServiceProviders = new HashSet<LinkServiceProvideUser>();
         }
 
         public string id { get; set; }
@@ -27,8 +27,8 @@ namespace CharEmServices.Models
         public virtual UserType UserType { get; set; }
         public virtual Team Team { get; set; }
 
-        public virtual ICollection<ServiceRecipient> ServiceRecipients { get; set; }
-        public virtual ICollection<ServiceProvider> ServiceProviders { get; set; }
+        public virtual ICollection<LinkServiceRecipUser> LinkServiceRecipients { get; set; }
+        public virtual ICollection<LinkServiceProvideUser> LinkServiceProviders { get; set; }
 
 
     }

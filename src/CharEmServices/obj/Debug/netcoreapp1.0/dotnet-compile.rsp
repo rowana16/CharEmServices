@@ -211,6 +211,12 @@ C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Pr
 C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Startup.cs
 C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Controllers\HomeController.cs
 C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Models\Address.cs
+C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Models\LinkServiceProvideLocation.cs
+C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Models\LinkServiceProvideService.cs
+C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Models\LinkServiceProvideUser.cs
+C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Models\LinkServiceRecipLocation.cs
+C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Models\LinkServiceRecipService.cs
+C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Models\LinkServiceRecipUser.cs
 C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Models\Location.cs
 C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Models\MainContext.cs
 C:\Users\aaron\Documents\Visual Studio 2015\CharEmServices\src\CharEmServices\Models\OrganizationType.cs

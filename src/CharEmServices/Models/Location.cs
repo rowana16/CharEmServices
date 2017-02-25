@@ -9,15 +9,15 @@ namespace CharEmServices.Models
     {
         public Location()
         {
-            this.ServiceProviders = new HashSet<ServiceProvider>();
-            this.ServiceRecipients = new HashSet<ServiceRecipient>();
+            this.LinkServiceProviders = new HashSet<LinkServiceProvideLocation>();
+            this.LinkServiceRecipients = new HashSet<LinkServiceRecipLocation>();
         }
 
         public int Id { get; set; }
         public string LocationName { get; set; }
         public string LocationDescription { get; set; }
 
-        public virtual ICollection<ServiceProvider> ServiceProviders { get; set; }
-        public virtual ICollection<ServiceRecipient> ServiceRecipients { get; set; }
+        public virtual ICollection<LinkServiceProvideLocation> LinkServiceProviders { get; set; }
+        public virtual ICollection<LinkServiceRecipLocation> LinkServiceRecipients { get; set; }
     }
 }
