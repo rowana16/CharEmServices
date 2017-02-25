@@ -23,7 +23,7 @@ namespace CharEmServices.Models
 
         public virtual Address Address { get; set; }
         public virtual OrganizationType OrganizationType { get; set; }        
-        public virtual User User { get; set; }
+        public virtual AppUser User { get; set; }
         public virtual Team Team { get; set; }
 
         public virtual ICollection<LinkServiceProvideLocation> LinkLocations { get; set; }

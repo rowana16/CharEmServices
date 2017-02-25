@@ -9,13 +9,13 @@ namespace CharEmServices.Models
 {
     public class AccountController : Controller 
     {
-        private readonly UserManager<User> userManager;
-        private readonly SignInManager<User> loginManager;
+        private readonly UserManager<AppUser> userManager;
+        private readonly SignInManager<AppUser> loginManager;
         private readonly RoleManager<UserRole> roleManager;
 
 
-        public AccountController(UserManager<User> userManager,
-           SignInManager<User> loginManager,
+        public AccountController(UserManager<AppUser> userManager,
+           SignInManager<AppUser> loginManager,
            RoleManager<UserRole> roleManager)
         {
             this.userManager = userManager;
@@ -37,7 +37,7 @@ namespace CharEmServices.Models
         {
             if (ModelState.IsValid)
             {
-                User user = new User();
+                AppUser user = new AppUser();
                 user.UserName = obj.UserName;
                 user.Email = obj.Email;
                 user.FirstName = obj.FirstName;

@@ -10,9 +10,9 @@ namespace CharEmServices.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly UserManager<User> userManager;
+        private readonly UserManager<AppUser> userManager;
 
-        public HomeController(UserManager<User>
+        public HomeController(UserManager<AppUser>
                               userManager)
         {
             this.userManager = userManager;
@@ -20,7 +20,7 @@ namespace CharEmServices.Controllers
 
         public IActionResult Index()
         {
-            User user = userManager.GetUserAsync
+            AppUser user = userManager.GetUserAsync
                          (HttpContext.User).Result;
 
             ViewBag.Message = $"Welcome {user.FirstName}!";

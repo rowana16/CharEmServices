@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CharEmServices.Models
 {
-    public class MainContext : IdentityDbContext<User, UserRole,string>
+    public class MainContext : IdentityDbContext<AppUser, UserRole,string>
     {
         public MainContext(DbContextOptions<MainContext> options) : base(options) { }
 
@@ -32,6 +32,8 @@ namespace CharEmServices.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
             modelBuilder.Entity<LinkServiceProvideLocation>().HasKey(x => new { x.ServiceProviderId, x.LocationId });
             modelBuilder.Entity<LinkServiceProvideService>().HasKey(x => new { x.ServiceProviderId, x.ServiceId });
             modelBuilder.Entity<LinkServiceProvideUser>().HasKey(x => new { x.ServiceProviderId, x.UserId });

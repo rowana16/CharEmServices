@@ -11,6 +11,6 @@ namespace CharEmServices.Models
         public virtual ServiceProvider ServiceProvider { get; set; }
 
         public string UserId  {get; set;}
-        public virtual User User  {get; set;}
+        public virtual AppUser User  {get; set;}
     }
 }

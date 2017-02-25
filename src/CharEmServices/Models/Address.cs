@@ -11,7 +11,7 @@ namespace CharEmServices.Models
         {
             this.ServiceProviders = new HashSet<ServiceProvider>();
             this.ServiceRecipients = new HashSet<ServiceRecipient>();
-            this.Users = new HashSet<User>();
+            this.Users = new HashSet<AppUser>();
         }
 
         public int Id { get; set; }
@@ -23,7 +23,7 @@ namespace CharEmServices.Models
 
         public virtual ICollection<ServiceProvider> ServiceProviders { get; set; }
         public virtual ICollection<ServiceRecipient> ServiceRecipients { get; set; }
-        public virtual ICollection<User> Users { get; set; }
+        public virtual ICollection<AppUser> Users { get; set; }
 
     }
 }

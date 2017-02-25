@@ -6,15 +6,15 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace CharEmServices.Models
 {
-    public class User : IdentityUser
+    public class AppUser : IdentityUser
     {
-        public User()
+        public AppUser()
         {
             this.LinkServiceRecipients = new HashSet<LinkServiceRecipUser>();
             this.LinkServiceProviders = new HashSet<LinkServiceProvideUser>();
         }
 
-        public Guid id { get; set; }
+       // public string id { get; set; }
 
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -29,6 +29,7 @@ namespace CharEmServices.Models
 
         public virtual ICollection<LinkServiceRecipUser> LinkServiceRecipients { get; set; }
         public virtual ICollection<LinkServiceProvideUser> LinkServiceProviders { get; set; }
+        
 
 
     }

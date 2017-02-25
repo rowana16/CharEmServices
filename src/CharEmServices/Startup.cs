@@ -36,7 +36,7 @@ namespace CharEmServices
             services.AddMvc();
             services.AddSingleton<IConfigurationBuilder>(builder);
             services.AddDbContext<MainContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddIdentity<User, UserRole>()
+            services.AddIdentity<AppUser, UserRole>()
                 .AddEntityFrameworkStores<MainContext>()
                 .AddDefaultTokenProviders();
         }
